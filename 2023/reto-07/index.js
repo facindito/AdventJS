@@ -1,6 +1,6 @@
 function drawGift(size, symbol) {
   if (size <= 1) return '#\n'
-  let gift = [];
+  const gift = [];
   gift.push('#'.repeat(size) + symbol.repeat(size - 2) + '#')
   for (let i = size - 1; i > 1; i--) {
     gift.unshift(
